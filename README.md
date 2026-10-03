@@ -4,7 +4,7 @@
 
 This project analyzes e-commerce sales data using Python, MySQL, and Power BI to identify sales trends, profit performance, product performance, category performance, and regional performance.
 
-The dashboard also includes a Business Alert System to highlight important business conditions such as profit margin status.
+The dashboard also includes a Business Alert System to highlight important business conditions such as profit margin status and sales dependency.
 
 ## Tools & Technologies
 
@@ -16,6 +16,7 @@ The dashboard also includes a Business Alert System to highlight important busin
 - Power BI
 - DAX
 - Git & GitHub
+
 ## Key Business Insights
 
 - Total Sales: ₹70,600
@@ -26,6 +27,7 @@ The dashboard also includes a Business Alert System to highlight important busin
 - Electronics generated the highest sales.
 - South region generated the highest sales.
 - Laptop was the highest-selling product by sales.
+
 ## Project Structure
 
 ```text
@@ -35,6 +37,7 @@ ecommerce-sales-analytics/
 │   └── cleaned_orders.csv
 │
 ├── images/
+│   ├── dashboard_preview.png
 │   ├── sales_by_category.png
 │   ├── profit_by_category.png
 │   ├── sales_by_region.png
@@ -49,12 +52,15 @@ ecommerce-sales-analytics/
 ├── sql/
 │
 └── README.md
+```
+
 ## Business Alert System
 
 The dashboard includes a rule-based Business Alert System that monitors the overall profit margin.
 
 - If profit margin is below 10% → ⚠️ Low Profit Margin
 - Otherwise → ✅ Healthy Profit Margin
+
 ### Sales Dependency Monitor
 
 The Python analysis also monitors sales concentration by category.
@@ -63,15 +69,25 @@ The Python analysis also monitors sales concentration by category.
 - Otherwise → ✅ Sales Distribution is Balanced
 
 For the current dataset, Electronics contributes 89.38% of total sales, triggering a High Sales Dependency alert.
+
 ## How to Run
 
 1. Start MySQL and make sure the `ecommerce_sales` database is available.
 2. Open the project in VS Code.
 3. Install the required Python libraries:
-   `pip install pandas mysql-connector-python matplotlib`
+
+```bash
+pip install pandas mysql-connector-python matplotlib
+```
+
 4. Run the Python analysis:
-   `python python/analysis.py`
+
+```bash
+python python/analysis.py
+```
+
 5. Open the Power BI file from the `powerbi` folder to view the dashboard.
+
 ## Future Improvements
 
 - Add sales forecasting.
@@ -79,6 +95,7 @@ For the current dataset, Electronics contributes 89.38% of total sales, triggeri
 - Add more Business Alerts.
 - Connect Power BI directly to MySQL for live data.
 - Add more interactive dashboard filters.
+
 ## Dashboard Preview
 
 ![E-Commerce Sales Analytics Dashboard](images/dashboard_preview.png)
