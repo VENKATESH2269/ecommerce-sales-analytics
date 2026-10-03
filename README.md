@@ -79,6 +79,9 @@ For the current dataset, Electronics contributes 89.38% of total sales, triggeri
 - Add more Business Alerts.
 - Connect Power BI directly to MySQL for live data.
 - Add more interactive dashboard filters.
+## Dashboard Preview
+
+![E-Commerce Sales Analytics Dashboard](images/dashboard_preview.png)
 
 ## Author
 
